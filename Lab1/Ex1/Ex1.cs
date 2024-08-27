@@ -10,6 +10,7 @@ public class Program
 
         // Criar um array de strings de tamanho N
         string[] frases = new string[N];
+        Thread[] threads = new Thread[N];
 
         // Ler as N frases da entrada e salvá-las no array
         for (int i = 0; i < N; ++i)
@@ -17,11 +18,12 @@ public class Program
             frases[i] = Console.ReadLine();
         }
 
-        // Continue a Implementação (Criar as threads e etc)
-        for(int i = 0; i < N; ++i)
+        for (int i = 0; i < N; ++i)
         {
             int id = i;
-            new Thread(() => WritePhrase(id+1, frases[id])).Start();
+            threads[i] = new Thread(() => WritePhrase(id+1, frases[id]));
+            threads[i].Start();
+            threads[i].Join();
         }
     }
 

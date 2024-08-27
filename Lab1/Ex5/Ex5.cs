@@ -38,7 +38,10 @@ class Program
         }
 
         // Continue a Implementação
-        // ...
+        foreach(var dir in _directories)
+        {
+            new Thread(() => ProcessDirectory(dir, keyword)).Start();
+        }
     }
 
     // Função que pesquisa a palavra chave nos arquivos de um diretório
