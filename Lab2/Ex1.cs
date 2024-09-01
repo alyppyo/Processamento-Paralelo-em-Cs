@@ -1,3 +1,5 @@
+// Questão 1
+// ----------
 // Dado um número inteiro N lido da entrada, seu programa deve calcular a soma
 // dos quadrados dos números inteiros no intervalo de 0 a N. Por fim, imprima o resultado.
 // Implemente uma versão sequencial e uma versão usando paralelismo.
