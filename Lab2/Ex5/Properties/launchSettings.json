@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Ex5": {
+      "commandName": "Project",
+      "commandLineArgs": "< Resources/t2.in"
+    }
+  }
+}

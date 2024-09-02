@@ -1,3 +1,4 @@
 obj/
-Solutions/
+bin/
+.vs/
 *.exe
