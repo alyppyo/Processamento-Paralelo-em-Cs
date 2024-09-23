@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Ex3": {
+      "commandName": "Project",
+      "commandLineArgs": "< Resources/Input.txt"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Ex2": {
+      "commandName": "Project",
+      "commandLineArgs": "< Resources/Input.txt"
+    }
+  }
+}
