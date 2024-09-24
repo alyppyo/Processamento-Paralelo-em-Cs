@@ -35,7 +35,9 @@ class Program
 
         await Task.WhenAll(tasksLista);
 
-        Thread.Sleep(10000);
+        int tempoSec = 30;
+        Console.WriteLine($"\n\nPrograma finalizado. O console irá fechar em {tempoSec} segundos.");
+        Thread.Sleep(tempoSec * 1000);
     }
 
     static async Task PrepararPedido(string prato, int tempoMs)

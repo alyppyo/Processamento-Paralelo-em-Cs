@@ -53,7 +53,9 @@ class Program
         cancellationTokenSource.Cancel();
         Task.WaitAll(entregas);
 
-        Thread.Sleep(30000);
+        int tempoSec = 30;
+        Console.WriteLine($"\n\nPrograma finalizado. O console irá fechar em {tempoSec} segundos.");
+        Thread.Sleep(tempoSec * 1000);
     }
 
     static void CriarSolicitacao(int idVendedor, ConcurrentQueue<int> filaDeSolicitacoes, int solicitacoesPorVendedor)
